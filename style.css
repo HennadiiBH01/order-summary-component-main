@@ -15,6 +15,11 @@ body {
 }
 
 .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: max(360px, 21%);
     background-color: white;
     border-radius: 18px;
     display: flex;
@@ -27,13 +32,16 @@ body {
 }
 
 .container {
+    max-width: max(300px, 80%);
+    margin: auto;
     padding: 0 24px;
 }
 
 .container > h3 {
     color: var(--color-dark-blue);
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
     font-weight: 900;
+    margin-top: 32px;
     margin-bottom: 0;
 }
 
